@@ -128,8 +128,11 @@ usart_rx_check(void) {
             /* We are in "overflow" mode */
             /* First process data to the end of buffer */
             usart_process_data(&usart_rx_dma_buffer[old_pos], ARRAY_LEN(usart_rx_dma_buffer) - old_pos);
-            /* Continue from beginning of buffer */
-            usart_process_data(&usart_rx_dma_buffer[0], pos);
+            /* Continue from beginning of buffer. Do not process again if pos = 0, as it means zero length.  */
+            if (pos > 0)
+            {
+                usart_process_data(&usart_rx_dma_buffer[0], pos);  
+            }
         }
     }
     old_pos = pos;                              /* Save current position as old */
