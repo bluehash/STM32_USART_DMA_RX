@@ -1,2 +1,9 @@
 Debug/
 .metadata/
+*.crun
+*.xcl
+*.ps1
+*.bat
+*.dnx
+*.dep
+*.wsdt
