@@ -4,6 +4,7 @@
 #include "stdlib.h"
 #include "string.h"
 #include "cmsis_os.h"
+#include <assert.h>
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
