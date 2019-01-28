@@ -1,7 +1,17 @@
 # Changes
 
 - Added IAR Workbench(8.30.2) support to F4 project(idle_line_irq_rtos_F4)
+
   - See workspace file under iar_support/stm32UARTDMA
+
+- Tested on STM32F413ZH Nucleo Board via USART3, through USB VCP.
+
+- Added Tera Term test script that sends 32 bytes(10 times) to test the 64byte  DMA buffer.
+
+  - Download TeraTerm from https://osdn.net/projects/ttssh2/releases/
+  - Once installed, download the file to the Nucleo board, start TT, connect to COM port and start the macro via Control->Macro. Macro is under idle_line_irq_rtos_F4/test.
+
+  
 
 # STM32 + UART + DMA RX + unknown length
 

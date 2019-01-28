@@ -1,0 +1,7 @@
+
+
+for i 1 10
+    send '32 Bytes:A5A5A5A5A5A5A5A5A~END'
+next
+
+
