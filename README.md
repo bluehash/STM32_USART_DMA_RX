@@ -1,3 +1,8 @@
+# Changes
+
+- Added IAR Workbench(8.30.2) support to F4 project(idle_line_irq_rtos_F4)
+  - See workspace file under iar_support/stm32UARTDMA
+
 # STM32 + UART + DMA RX + unknown length
 
 This repository may give you information about how to read data on UART by using DMA when number of bytes to receive is not known in advance.
