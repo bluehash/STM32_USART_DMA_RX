@@ -149,12 +149,6 @@ usart_rx_check(void) {
 void
 usart_process_data(const void* data, size_t len) {
     const uint8_t* d = data;
-    
-    if(len == 0)
-    {
-      return;
-    }
-    
     while (len--) {
         LL_USART_TransmitData8(USART3, *d++);
         while (!LL_USART_IsActiveFlag_TXE(USART3));
